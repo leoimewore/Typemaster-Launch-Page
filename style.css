@@ -1,0 +1,634 @@
+@charset "UTF-8";
+
+:root {
+        /* primary color */
+        --header-bg-dark-blue: hsl(220,50%,17%);
+        --card-bg-dark-orange-blue: hsl(22, 89%, 52%);
+           
+    
+        /* Neutral */
+        --heading-white: hsl(0, 0%, 100%);  /* (main heading, stats) */
+        --para-transparent-white: #7b8bad;    /* (paragraph text) */
+        --accent-soft-orange: hsl(22, 100%, 69%); 
+        
+    
+        /* font family */
+        --ff-text: sans-serif;
+
+    
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+
+
+body {
+    font-family: var(--ff-text);
+    font-weight: 500;
+    font-size: 1.175rem;
+    min-height: 100vh;
+    background-image: url(shared/pattern-square.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 35%;
+    
+}
+.wrapper {
+    max-width: 1440px;
+    margin: 2em auto;
+    
+    
+
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    max-width: 91.4%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+button {
+    font-family: var(--ff-text);
+    font-size: 16px;
+    padding: 0.9em;
+    text-transform: uppercase;
+    border-radius: 0.4em;
+    background-color: rgb(241, 240, 240);
+    color: #162542;
+    font-weight: bold;
+    border: 1px solid rgb(241, 240, 240);
+}
+
+button:hover {
+    background-color: var(--para-transparent-white);
+    color: #fff;
+}
+
+main {
+    max-width: 91.4%;
+    margin: 0 auto;
+    
+    
+}
+
+.top-section {
+    display: flex;
+    margin-top: 83px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    overflow-x: hidden;
+}
+
+.main-header {
+    max-width: 80%;
+    /* max-width:400px ; */
+    
+
+    
+    
+
+}
+
+.key-board {
+    width: 70%;
+    min-width: 400px;
+    /* overflow-x: hidden; */
+   
+    
+   
+    
+}
+
+.key-board >img {
+
+}
+
+
+
+
+.key-board > img,
+.keyboard-glass > img {
+    border-radius: 2em;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size:3.5rem;
+    line-height: 56px;
+    margin-bottom: 0.2em;
+    color: var(--header-bg-dark-blue);
+    font-weight: bolder;
+    margin-bottom: 24px;
+    width:70%
+}
+
+.main-header > p {
+    width: 75%;
+    
+}
+
+
+p {
+    font-family: var(--ff-text);
+    color: var(--para-transparent-white);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 40px;
+}
+
+.button-class {
+    background-color: var(--card-bg-dark-orange-blue);
+    color: #fff;
+}
+.button-class:hover {
+    background-color: var(--accent-soft-orange);
+}
+
+span {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 1.5em;
+    color: var(--para-transparent-white);
+    font-style: normal;
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 700;
+    /* width: 50%; */
+}
+
+.section-two {
+    display: flex;
+    gap: 1.5em;
+    margin-bottom: 168px;
+
+}
+
+/* To make images with overlay color  */
+ .keyboard-phone { 
+    background-image: url(image-phone-and-keyboard.jpg);
+    background-repeat: no-repeat;
+    border-radius: 1.5em;
+    background-size: cover;
+    width: 45%;
+
+ }
+
+ /* To make images with overlay color  */
+  div.image-overlay {
+    background-color: #ff9b62;
+    opacity: 0.75;
+    
+    mix-blend-mode: multiply;
+    border-radius: 1.5em;
+    height: 100%;
+
+  }
+
+  h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-style: normal;
+    line-height: 36px;
+    font-weight: 900;
+    color: var(--header-bg-dark-blue);
+    margin-bottom: 27px;
+    text-align: left;
+
+  }
+
+  .side-note {
+    padding-left: 2em;
+    align-self: center;
+    width: 50%;
+  }
+
+  .side-note  p {
+    font-size: 16px;
+  }
+
+  
+
+  article > div {
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+      
+    background-color: var(--card-bg-dark-orange-blue);
+    background-position: center;
+    border-radius: 0.3em;
+    width: 20%;
+    height: 50px;
+
+  }
+
+
+
+  
+   
+
+  
+
+  
+
+
+  .cards {
+    display: grid;
+    gap:1.875em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: flex-start;
+    
+    
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28px;
+    font-style: normal;
+    width: 72.5%;
+    margin-top:1.5em ;
+    
+    margin-bottom: 24px;
+    
+  }
+
+
+  footer {
+    text-align: center;
+    margin-top: 128px;
+    max-width: 91.4%;
+  }
+footer p span {
+    text-transform: capitalize;
+}
+
+/* .images {
+    display: block;
+} */
+  
+@media screen and (max-width:768px) {
+    .section-two {
+         
+        flex-wrap: wrap;
+        gap: 1.5em;
+        overflow-x: hidden;
+
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+    
+    .keyboard-glass{
+        max-width: 60%;
+    }
+    .keyboard-phone {
+       background-image: url(image-phone-and-keyboard.jpg);
+       background-repeat: no-repeat;
+       border-radius: 1.5em;
+       background-size: cover;
+       width: 30%;
+       
+       
+       
+   
+    }
+   
+    /* To make images with overlay color */
+      div.image-overlay {
+       background-color: #ff9b62;
+       opacity: 0.75;
+       
+       mix-blend-mode: multiply;
+       border-radius: 1.5em;
+       height: 100%;
+       
+    }
+
+    .side-note {
+        width: 100%;
+        display: flex;
+        gap: 2em;
+        padding-left: 0; 
+        padding-top: 3.5em;
+        align-items: center;
+        
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .images {
+       display: block;
+   } 
+
+   @media screen and (max-width:560px) {
+       .top-section{
+           
+           flex-direction: column;
+           gap: 2em;
+          
+          
+           
+       }
+       .main-header{
+           min-width: 400px;
+       }
+
+       .key-board {
+           max-width: 100%;
+       }
+
+       .cards {
+           display: flex;
+           flex-direction: column;
+           margin: 0 auto;
+       }
+
+       .side-note {
+           flex-direction: column;
+           align-items: center;
+           
+       }
+       h2 {
+           text-align: center;
+       }
+
+       h3{
+           width: 100%;
+           text-align: center;
+           
+           
+       }
+       
+
+       
+
+       .card-image {
+           position: relative;
+           left: 38%;
+       }
+
+       p {
+           text-align: center;
+       }
+
+       
+   }
+
+   
+
+  
+
+
+
+/* 
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-section {
+    display: flex;
+    margin-top: 3em;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.section-two {
+    display: flex;
+    gap: 1.5em;
+    
+}
+
+.cards {
+    display: flex;
+    gap: 2em
+}
+footer {
+    text-align: center;
+    margin-top: 3em;
+} */
+
+/* Typography */
+
+
+   /* width: 95%; */
+   /* margin-left: 1em; */
+/* }
+.top-section section {
+    max-width: 40%;
+    align-self: center;
+    
+    max-width: 90%
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    line-height: 1em;
+    margin-bottom: 0.2em;
+    color: #162542;
+    font-weight: 900;
+}
+
+tton-class {
+    margin-top: 1em;
+    background-color: #f16718 ;
+    color: white;
+    border: 1px solid #f16718;
+}
+
+button:active {
+    background-color: #162542;
+    color:white;
+}
+
+
+
+
+.button-class:active {
+    background-color: #ff9b62;
+    color: white;
+}
+
+
+.release-dt {
+    display: inline-block;
+    margin-left: 1em;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #7B8BAD
+}
+
+
+/* To make images with overlay color */
+ /* /*.keyboard-phone { */
+    /* background-image: url(image-phone-and-keyboard.jpg);
+    background-repeat: no-repeat;
+    border-radius: 1.5em;
+    background-size: cover;
+    width: 45%;
+
+ } */
+
+ /* To make images with overlay color */
+ /* div.image-overlay {
+    background-color: #ff9b62;
+    opacity: 0.75;
+    
+    mix-blend-mode: multiply;
+    border-radius: 1.5em;
+    height: 100%;
+ } */
+
+ /* .keyboard-glass {
+     width: 100%;
+ }
+
+ .side-note {
+    width: 55%;
+    align-self: center;
+    padding: 0 1em;
+
+ }
+
+ h2 {
+     font-size: 2rem;
+     text-transform: uppercase;
+     color: #162542;
+     margin-bottom: 0.5em;
+ }
+
+ h3 {
+     text-transform: uppercase;
+     color: #162542;
+     margin-bottom: 1em;
+ }
+
+ .images {
+     border-radius: 1.5em;
+ }
+
+ .flex-card {
+     width: 25%;
+     
+ }
+
+ article > img {
+     width: 10%;
+     
+
+ }
+ .cards {
+     margin-top: 2em;
+ }
+
+ p > span {
+     font-weight: 900;
+     
+
+ }
+
+
+ @media screen and (max-width:900px) {
+     .section-two {
+         
+         flex-wrap: wrap;
+         gap: 1.5em;
+     }
+     .keyboard-glass{
+         width: 60%
+     }
+     .keyboard-phone {
+        background-image: url(image-phone-and-keyboard.jpg);
+        background-repeat: no-repeat;
+        border-radius: 1.5em;
+        background-size: cover;
+        width: 30%;
+    
+     } */
+    
+     /* To make images with overlay color */
+     /* div.image-overlay {
+        background-color: #ff9b62;
+        opacity: 0.75;
+        
+        mix-blend-mode: multiply;
+        border-radius: 1.5em;
+        height: 100%;
+     }
+     .side-note {
+         display: flex;
+         width: 100%;
+         gap: 2em;
+         margin-bottom: 1em;
+         align-items: center;
+         
+         
+         
+     }
+     .cards {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         
+     }
+
+     
+     .flex-card {
+         width: 40%;
+     }
+    
+         
+     
+
+     
+ } */
+
+
+ /* @media screen and (max-width:550px) {
+     .top-section {
+         display: flex;
+         flex-wrap: wrap;
+     }
+
+     .side-note {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         margin-top: 2em;
+         margin-bottom: 2em;
+         text-align: center;
+     }
+
+     
+
+     .top-section section {
+         text-align: center;
+         width: 100%;
+     }
+
+     .flex-card {
+         width: 100%
+     } */
+
+    
+
+
+

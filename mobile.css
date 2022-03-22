@@ -29,6 +29,15 @@ img {
     max-width: 100%;
 }
 
+body {
+    font-family: var(--ff-text);
+    font-weight: 500;
+    font-size: 1.175rem;
+    min-height: 100vh;
+    width: 550px;
+    margin: 0 auto;
+}
+
 header {
     max-width: 91.4%;
     display: flex;
@@ -36,6 +45,11 @@ header {
     margin: 0 auto;
     margin-top: 2em;
 
+}
+
+main {
+    max-width: 91.4%;
+    margin: 0 auto;
 }
 
 button {
@@ -49,16 +63,18 @@ button {
     font-weight: bold;
     border: 1px solid rgb(241, 240, 240);
 }
-main {
-    max-width: 91.4%;
-    margin: 0 auto;
-}
-
-
 
 button:hover {
     background-color: var(--para-transparent-white);
     color: #fff;
+}
+
+.top-section {
+    max-width:91.4%;
+    margin-top: 83px;
+    margin-bottom: 30px;
+    
+    
 }
 
 .top-section , .section-two , .cards{
@@ -76,31 +92,6 @@ h1 {
     margin-bottom: 24px;
     
 }
-
-@media screen and (max-width:550px) {
-
-body {
-    font-family: var(--ff-text);
-    font-weight: 500;
-    font-size: 1.175rem;
-    min-height: 100vh;
-    width: 550px;
-    margin: 0 auto;
-}
-
-
-
-
-
-.top-section {
-    max-width:91.4%;
-    margin-top: 83px;
-    margin-bottom: 30px;
-    
-    
-}
-
-
 .main-header > p {
     width: 75%;
     
@@ -158,12 +149,13 @@ span {
     gap: 2em;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 2fr 1fr;
+   margin-bottom: 3em;
 }
 
 .keyboard-phone { 
     background-image: url(image-phone-and-keyboard.jpg);
     background-repeat: no-repeat;
-    border-radius: 1em;
+    border-radius: 1.5em;
     background-size: cover;
     width: 100%;
 
@@ -205,10 +197,7 @@ span {
     
   }
 
-  .cards {
-      
-  }
-
+ 
   h3 {
     text-transform: uppercase;
     font-size: 24px;
@@ -252,63 +241,167 @@ span {
 
   }
 
-}
 
-  @media screen and (max-width:768px) {
-    .section-two {
-         
-        flex-wrap: wrap;
-        gap: 1.5em;
-        overflow-x: hidden;
-
-    }
+  @media screen and (min-width:550px){
 
     body {
-        overflow-x: hidden;
+        width:768px
     }
-    
-    .keyboard-glass{
-        max-width: 60%;
+
+
+    header {
+        width: 80.4%;
     }
-    .keyboard-phone {
-       background-image: url(image-phone-and-keyboard.jpg);
-       background-repeat: no-repeat;
-       border-radius: 1.5em;
-       background-size: cover;
-       width: 30%;
-       
-       
-       
-   
+    .top-section {
+        width:91.4%;
+        display: flex;
+        gap: 2em;
     }
    
-    /* To make images with overlay color */
-      div.image-overlay {
-       background-color: #ff9b62;
-       opacity: 0.75;
-       
-       mix-blend-mode: multiply;
-       border-radius: 1.5em;
-       height: 100%;
-       
+
+    h1 {
+        font-size: 48px;
+    }
+
+    p {
+       font-size: 16px;
+    }
+
+    .main-header {
+        width: 200%
+    }
+
+    .key-board > img {
+        max-width: 170%
+    }
+
+    .section-two {
+        width:91.4%;
+        margin-bottom: 4em;
     }
 
     .side-note {
-        width: 100%;
         display: flex;
-        gap: 2em;
-        padding-left: 0; 
-        padding-top: 3.5em;
         align-items: center;
+        gap: 2em;
         
     }
 
-    .cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .side-note > p {
+        text-align: left;
     }
 
-    .images {
-       display: block;
-   } 
+    h2 {
+        text-align: left;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        width: 91.4%;
+        
+        
+        
+    }
+
+    .flex-card {
+        width: 50%;
+        
+    }
+
+    h3 {
+        width: 70%;
+        text-align: left;
+        position: relative;
+        left:0%
+    }
+
+    article > p {
+        text-align: left;
+    }
+
+    article > div {
+     position: relative;
+     right: 40%;
+    }
+
+
+    
+    
 }
+
+
+@media screen and (min-width:800px){
+
+    body {
+        width:1400px
+    }
+    /* main {
+        width: 100%
+    } */
+
+    .cards {
+        flex-wrap: nowrap;
+        gap: 2em;
+        
+    }
+    .wrapper {
+        width: 100%
+    }
+    .flex-card {
+        width: 25%;
+    }
+
+    h3 {
+        width: 90%;
+    }
+     .top-section {
+        width: 91.4%
+    }
+
+    .main-header {
+     align-self: center;
+     width: 90%
+    }
+    .key-board > img {
+        width: 90%;
+    }
+
+    .section-two {
+        grid-template-columns: 250px 1fr 1fr;
+        grid-template-rows: 480px;
+    }
+
+    .side-note {
+        grid-column: 3/4;
+        flex-direction: column;
+        padding: 4em;
+    }
+
+    header {
+        width: 83.7%;
+    }
+
+}
+
+
+
+
+  
+
+  
+
+
+
+    
+
+  
+
+   
+
+  
+
+
+
+
+
